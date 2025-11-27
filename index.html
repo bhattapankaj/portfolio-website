@@ -59,7 +59,6 @@
         <ul class="nav">
             <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
             <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
-            <li><a href="#services"><i class="fa fa-cogs"></i>Services</a></li>
             <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
             <li><a href="#blogs"><i class="fa-solid fa-blog"></i>Blogs</a></li>
             <li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
@@ -73,13 +72,120 @@
             <div class="container">
                 <div class="row">
                     <div class="home-info padd-15">
-                        <h3 class="hello">Hello! Welcome to the world of <span class="name">Pankaj Bhatta</span></h3>
+                        <h3 class="hello">Hello! Hola! Bonjour! This is <span class="name">Pankaj Bhatta</span></h3>
                         <h3 class="my-profession">I'm a <span class="typing">Web Designer</span></h3>
                         <p>Fueled by curiosity and coffee, I turn ideas into code, pixels, and impact. From the land of Mt. Everest to the land of opportunity, I'm on a mission to create, learn, and leave things better than I found them.</p>
                         <a href="CV_PankajBhatta.pdf" target="_blank" class="btn" >Download CV &nbsp; <i class="fa fa-download"></i></a>
                     </div>
                     <div class="home-img padd-15">
-                        <img src="images/hero/hero.jpg">
+                        <div class="projects-carousel">
+                            <button class="carousel-nav prev" onclick="changeProject(-1)">‹</button>
+                            <button class="carousel-nav next" onclick="changeProject(1)">›</button>
+                            
+                            <div class="project-showcase active">
+                                <div class="project-image">
+                                    <img src="images/portfolio/campesh.png" alt="Campesh">
+                                </div>
+                                <div class="project-details">
+                                    <h3>Campesh</h3>
+                                    <p class="project-subtitle">Your Campus. Your Mesh.</p>
+                                    <p class="project-description">Campus-focused social platform connecting students with classmates and study partners</p>
+                                    <ul class="project-features">
+                                        <li>Connect with classmates</li>
+                                        <li>Find study partners</li>
+                                        <li>Build campus community</li>
+                                    </ul>
+                                    <a href="https://www.campesh.com/login" target="_blank" class="btn">Visit Project</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-showcase">
+                                <div class="project-image">
+                                    <img src="images/portfolio/guardianacl.png" alt="ACL Guardian">
+                                </div>
+                                <div class="project-details">
+                                    <h3>ACL Guardian</h3>
+                                    <p class="project-subtitle">Injury Prevention System</p>
+                                    <p class="project-description">Smartwatch-based system analyzing movement patterns to predict ACL injury risk</p>
+                                    <ul class="project-features">
+                                        <li>Movement pattern analysis</li>
+                                        <li>Load management tracking</li>
+                                        <li>Finalist at Nexus DevDays HealthTech</li>
+                                    </ul>
+                                    <a href="https://guardianacl.netlify.app" target="_blank" class="btn">Visit Project</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-showcase">
+                                <div class="project-image">
+                                    <img src="images/portfolio/trackmyinternship.png" alt="Track My Internship">
+                                </div>
+                                <div class="project-details">
+                                    <h3>Track My Internship</h3>
+                                    <p class="project-subtitle">Student Internship Manager</p>
+                                    <p class="project-description">Responsive web app helping students track and apply for internships</p>
+                                    <ul class="project-features">
+                                        <li>Login/signup system</li>
+                                        <li>Data storage & management</li>
+                                        <li>Theme customization</li>
+                                    </ul>
+                                    <a href="https://trackmyinternship.netlify.app" target="_blank" class="btn">Visit Project</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-showcase">
+                                <div class="project-image">
+                                    <img src="images/portfolio/website-3.png" alt="PankajOS">
+                                </div>
+                                <div class="project-details">
+                                    <h3>PankajOS</h3>
+                                    <p class="project-subtitle">Browser-Based OS Experience</p>
+                                    <p class="project-description">Interactive terminal system bringing OS experience to your browser</p>
+                                    <ul class="project-features">
+                                        <li>Five unique terminals</li>
+                                        <li>Real-life prompt responses</li>
+                                        <li>Interactive exploration</li>
+                                    </ul>
+                                    <a href="https://pankajos.netlify.app" target="_blank" class="btn">Visit Project</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-showcase">
+                                <div class="project-image">
+                                    <img src="images/portfolio/website-4.png" alt="Anywhere AI">
+                                </div>
+                                <div class="project-details">
+                                    <h3>Anywhere AI</h3>
+                                    <p class="project-subtitle">Hawkathon Winner</p>
+                                    <p class="project-description">AI-powered relocation platform helping people find housing, jobs, and events</p>
+                                    <ul class="project-features">
+                                        <li>Smart AI recommendations</li>
+                                        <li>Real-time API integration</li>
+                                        <li>First place at GDSC ULM Hackathon</li>
+                                    </ul>
+                                    <a href="https://anywhere-ai.vercel.app/landing" target="_blank" class="btn">Visit Project</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-showcase">
+                                <div class="project-image">
+                                    <img src="images/portfolio/website-2.png" alt="LAA School Website">
+                                </div>
+                                <div class="project-details">
+                                    <h3>LAA School Website</h3>
+                                    <p class="project-subtitle">Educational Platform</p>
+                                    <p class="project-description">Modern, responsive website for Lok Aadarsha Academy</p>
+                                    <ul class="project-features">
+                                        <li>School information hub</li>
+                                        <li>News & updates</li>
+                                        <li>Student & parent resources</li>
+                                    </ul>
+                                    <a href="https://www.laa.edu.np/" target="_blank" class="btn">Visit Project</a>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-dots"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -316,85 +422,6 @@
                                     </div>
         </section>
         <!-- About Section Ends-->
-        <!-- SERVICES Section Starts-->
-        <section class="service section" id="services">
-        <div class="container">
-            <div class="row">
-                <div class="section-title padd-15">
-                    <h2>Services</h2>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Service Items Starts-->
-                <div class="service-item padd-15">
-                    <div class="service-item-inner">
-                        <div class="icon">
-                            <i class="fa fa-lightbulb"></i>
-                        </div>
-                        <h4>Problem Solving</h4>
-                        <p>Creative coding solutions and algorithmic problem solving for academic and real-world challenges.</p>
-                    </div>
-                </div>
-                <!-- Service Items Ends-->
-                <!-- Service Items Starts-->
-                <div class="service-item padd-15">
-                    <div class="service-item-inner">
-                        <div class="icon">
-                            <i class="fa fa-laptop-code"></i>
-                        </div>
-                        <h4>Web Development</h4>
-                        <p>Full-stack web development using HTML, CSS, JavaScript, Python. Portfolio websites and custom web applications.</p>
-                    </div>
-                </div>
-                <!-- Service Items Ends-->
-                <!-- Service Items Starts-->
-                <div class="service-item padd-15">
-                    <div class="service-item-inner">
-                        <div class="icon">
-                            <i class="fa fa-chalkboard-teacher"></i>
-                        </div>
-                        <h4>Teaching & Mentoring</h4>
-                        <p>Computer Science education, coding instruction, and academic mentoring for students of all levels.</p>
-                    </div>
-                </div>
-                <!-- Service Items Ends-->
-                <!-- Service Items Starts-->
-                <div class="service-item padd-15">
-                    <div class="service-item-inner">
-                        <div class="icon">
-                            <i class="fa fa-code"></i>
-                        </div>
-                        <h4>Programming</h4>
-                        <p>Python, C, JavaScript development. Problem-solving and algorithm implementation for various applications.</p>
-                    </div>
-                </div>
-                <!-- Service Items Ends-->
-                <!-- Service Items Starts-->
-                <div class="service-item padd-15">
-                    <div class="service-item-inner">
-                        <div class="icon">
-                            <i class="fa fa-palette"></i>
-                        </div>
-                        <h4>Graphics Design</h4>
-                        <p>Creative graphics design for web, social media, and print using Photoshop, Canva, and more.</p>
-                    </div>
-                </div>
-                <!-- Service Items Ends-->
-                <div class="service-item padd-15">
-                    <div class="service-item-inner">
-                        <div class="icon">
-                            <i class="fa fa-handshake"></i>
-                        </div>
-                        <h4>Freelance Services</h4>
-                        <p>Comprehensive freelance services including web development, graphics design, video editing, and AI solutions.</p>
-                    </div>
-                </div>
-                <!-- Service Items Ends-->
-                            
-            </div>
-        </div>
-        </section>
-        <!-- SERVICES Section Ends-->
         <!-- Portfolio Section Starts-->
         <section class="portfolio section" id="portfolio">
             <div class="container">
@@ -416,12 +443,30 @@
                     </div>
                 </div>
                 <div class="portfolio-websites-container">
-                    <!-- Website Card 0: Internship Tracker -->
+                    <!-- Website Card 0: Campesh -->
+                    <div class="website-card">
+                        <img src="images/portfolio/campesh.png" alt="Campesh">
+                        <div class="website-card-content">
+                            <h4 class="website-title">Campesh</h4>
+                            <div class="website-desc">Campus-focused social platform connecting students with classmates, study partners, and building academic communities tailored for university life.</div>
+                            <a href="https://www.campesh.com/login" target="_blank" class="btn">Visit &nbsp;<i class="fa fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Website Card 1: ACL Guardian -->
+                    <div class="website-card">
+                        <img src="images/portfolio/guardianacl.png" alt="ACL Guardian">
+                        <div class="website-card-content">
+                            <h4 class="website-title">ACL Guardian</h4>
+                            <div class="website-desc">Smartwatch injury prevention system analyzing movement patterns and load management to predict ACL injury risk. Finalist at Nexus DevDays HealthTech Louisiana.</div>
+                            <a href="https://guardianacl.netlify.app" target="_blank" class="btn">Visit &nbsp;<i class="fa fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Website Card 2: Internship Tracker -->
                     <div class="website-card">
                         <img src="images/portfolio/trackmyinternship.png" alt="Track My Internship">
                         <div class="website-card-content">
                             <h4 class="website-title">Track My Internship</h4>
-                            <div class="website-desc">A responsive web app for students to track and apply for internships. Features login/signup, internship data storage, multiple theme colors, and dark/light mode. Perfect for students managing their internship journey!</div>
+                            <div class="website-desc">Responsive web app for students to track and apply for internships with login/signup, data storage, and theme customization.</div>
                             <a href="https://trackmyinternship.netlify.app" target="_blank" class="btn">Visit &nbsp;<i class="fa fa-external-link-alt"></i></a>
                         </div>
                     </div>
@@ -430,7 +475,7 @@
                         <img src="images/portfolio/website-3.png" alt="PankajOS">
                         <div class="website-card-content">
                             <h4 class="website-title">PankajOS</h4>
-                            <div class="website-desc">PankajOS is a website that brings the feel of an operating system right into your browser. It features five different terminals, each with its own style and quirks. The main one, PankajOS, can even respond to some real-life prompts, making it a fun and interactive way to explore how terminals work online!</div>
+                            <div class="website-desc">Browser-based OS experience featuring five interactive terminals with unique styles. The main terminal responds to real-life prompts.</div>
                             <a href="https://pankajos.netlify.app" target="_blank" class="btn">Visit &nbsp;<i class="fa fa-external-link-alt"></i></a>
                         </div>
                     </div>
@@ -439,7 +484,7 @@
                         <img src="images/portfolio/website-4.png" alt="Anywhere AI">
                         <div class="website-card-content">
                             <h4 class="website-title">Anywhere AI</h4>
-                            <div class="website-desc">Hawkathon-winning website! Anywhere AI helps people moving to a new city by using smart AI and real-time APIs to find housing, jobs, and local events—all in one place. It brings together data from different sources to make relocation simple and stress-free. Built together by Binit Karki, Pankaj Bhatta, and Prasun Chhetri.</div>
+                            <div class="website-desc">Hawkathon-winning AI platform helping people relocate by finding housing, jobs, and events using smart AI and real-time APIs.</div>
                             <a href="https://anywhere-ai.vercel.app/landing" target="_blank" class="btn">Visit &nbsp;<i class="fa fa-external-link-alt"></i></a>
                         </div>
                     </div>
@@ -450,15 +495,6 @@
                             <h4 class="website-title">LAA School Website</h4>
                             <div class="website-desc">A modern, responsive website for Lok Aadarsha Academy, featuring school info, news, and resources for students and parents.</div>
                             <a href="https://www.laa.edu.np/" target="_blank" class="btn">Visit &nbsp;<i class="fa fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <!-- Website Card 4: First Portfolio Website -->
-                    <div class="website-card">
-                        <img src="images/portfolio/portfolio-4.png" alt="First Portfolio Website">
-                        <div class="website-card-content">
-                            <h4 class="website-title">First Portfolio Website</h4>
-                            <div class="website-desc">My first website project, where I experimented with as many features as possible while learning web development. View the code and project on GitHub.</div>
-                            <a href="https://github.com/gtpankaj4/pankajbhatta" target="_blank" class="btn">Visit &nbsp;<i class="fa fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>

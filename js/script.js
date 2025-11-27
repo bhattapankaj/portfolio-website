@@ -1,3 +1,68 @@
+/*   Projects Carousel   */
+let currentProject = 0;
+const projects = document.querySelectorAll('.project-showcase');
+const dotsContainer = document.querySelector('.carousel-dots');
+const carouselContainer = document.querySelector('.projects-carousel');
+
+if (projects.length > 0 && dotsContainer) {
+  // Create dots
+  projects.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('carousel-dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToProject(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.carousel-dot');
+
+  function goToProject(n) {
+    projects[currentProject].classList.remove('active');
+    dots[currentProject].classList.remove('active');
+    currentProject = n;
+    projects[currentProject].classList.add('active');
+    dots[currentProject].classList.add('active');
+  }
+
+  window.changeProject = function(direction) {
+    let newIndex = currentProject + direction;
+    if (newIndex < 0) newIndex = projects.length - 1;
+    if (newIndex >= projects.length) newIndex = 0;
+    goToProject(newIndex);
+  }
+
+  // Touch swipe functionality for mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  if (carouselContainer) {
+    carouselContainer.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    
+    carouselContainer.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+    
+    function handleSwipe() {
+      if (touchEndX < touchStartX - 50) {
+        // Swipe left - next project
+        changeProject(1);
+      }
+      if (touchEndX > touchStartX + 50) {
+        // Swipe right - previous project
+        changeProject(-1);
+      }
+    }
+  }
+
+  // Auto-advance every 5 seconds
+  setInterval(() => {
+    changeProject(1);
+  }, 5000);
+}
+
 /*   Typing  Animation  */
 var typed = new Typed(".typing", {
   strings: [
